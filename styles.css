@@ -1,0 +1,21 @@
+/* Error: $lightness: Expected -5 to have unit "%".
+ *    ,
+ * 85 |   $button-hover-background-color: scale-color($color-x-light, $lightness: -$hover-background-opacity-amount * 100),
+ *    |                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ *    '
+ *   node_modules/vanilla-framework/scss/_base_button.scss 85:35  vf-button-pattern()
+ *   node_modules/vanilla-framework/scss/_base_button.scss 7:5    vf-b-button()
+ *   node_modules/vanilla-framework/scss/_base.scss 29:3          vf-base()
+ *   node_modules/vanilla-framework/scss/_vanilla.scss 77:3       vanilla()
+ *   styles.scss 3:1                                              root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: 'Error: $lightness: Expected -5 to have unit "%".\a    \2577 \a 85 \2502    $button-hover-background-color: scale-color($color-x-light, $lightness: -$hover-background-opacity-amount * 100),\a    \2502                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a    \2575 \a   node_modules/vanilla-framework/scss/_base_button.scss 85:35  vf-button-pattern()\a   node_modules/vanilla-framework/scss/_base_button.scss 7:5    vf-b-button()\a   node_modules/vanilla-framework/scss/_base.scss 29:3          vf-base()\a   node_modules/vanilla-framework/scss/_vanilla.scss 77:3       vanilla()\a   styles.scss 3:1                                              root stylesheet';
+}
